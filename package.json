@@ -2,16 +2,17 @@
   "name": "my-recipes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
-    "install": "cd client && npm install && cd ../server && npm install",
-    "start": "npm run server",
-    "server": "cd server && nodemon app.js",
-    "client": "cd client && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js", 
+    "start:server": "node server/index.js", 
+    "start:client": "cd client && npm start", 
+    "build:client": "cd client && npm run build",
+    "build": "cd server && npm run build"
 
-}
+  }
+
 }
