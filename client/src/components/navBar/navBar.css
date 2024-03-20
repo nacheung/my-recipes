@@ -1,0 +1,68 @@
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+    width: 100%;
+    height: 100px;
+    background: white;
+    
+}
+
+.nav-background {
+	width: 380px;
+	height: 40px;
+	padding-left: 0%;
+	padding-right: 0%;
+	@media only screen and (max-width: 800px) {
+		width: 300px;
+    }
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	margin-left: -16px;
+	margin-right: 20px;
+	margin-top: 11px;
+}
+
+.site-name {
+    cursor: pointer;
+
+
+
+}
+
+.login-link {
+    cursor: pointer;
+    font: #31383F;
+    top: 40px;
+    right: 40px;
+    position: absolute;
+
+}
+
+.nav-item a {
+	text-decoration: none;
+    color: #31383F;
+    font-family: 'Nanum Myeongjo', cursive;
+
+    
+}
+
+.site-name a {
+	text-decoration: none;    
+    font-size: 32px;
+    font-weight: 800;
+    left: 40px;
+    top: 40px;
+    position: absolute;
+
+}
