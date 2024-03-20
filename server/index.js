@@ -50,7 +50,7 @@ let images = [];
 
 function htmlDecodeWithLineBreaks($, html) {
     let myhtml = html
-    .replace(/<\/li>/gm, '\n</li>').replace(/<\/div>/gm, '</div>\n').replace(/<\/span>/gm, '</div>\n').replace(/<\/h\d>/gm, '\n').replace(/<script>(.|\n|\r)*?<\/script>/gm, '').replace(/<(?:.)*?>/gm, ''); // remove all html tags
+    .replace(/<\/li>/gm, '\n</li>').replace(/<\/div>/gm, '</div>\n').replace(/<\/h\d>/gm, '\n').replace(/<script>(.|\n|\r)*?<\/script>/gm, '').replace(/<(?:.)*?>/gm, ''); // remove all html tags
     return he.decode(myhtml);
   }
 
